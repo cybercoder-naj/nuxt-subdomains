@@ -8,7 +8,7 @@
 
 Demo &bull; [Quick Start](#quick-start) &bull; [License](/LICENSE) &bull; [Changelog](/CHANGELOG.md)
 
-This is a stripped down version of [nuxt-multi-tenancy](https://github.com//nuxt-multitenancy) that requires little to no setup. Heavily inspired by [zernonia/keypress](https://github.com/zernonia/keypress) open-source blogging website.
+This is a stripped down version of [nuxt-multi-tenancy](https://github.com/hieuhani/nuxt-multitenancy) that requires little to no setup. Heavily inspired by [zernonia/keypress](https://github.com/zernonia/keypress) open-source blogging website.
 
 ## Why should you use it?
 
