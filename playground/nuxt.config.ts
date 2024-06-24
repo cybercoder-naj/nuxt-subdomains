@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   modules: ["../src/module"],
   nuxtSubdomains: {
-    mainDomains: ["http://example.com"],
+    mainDomains: ["example.com", "localhost:3000"],
   },
   devtools: {
     enabled: true,
