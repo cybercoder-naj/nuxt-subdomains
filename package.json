@@ -1,6 +1,6 @@
 {
   "name": "nuxt-subdomains",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Nishant Aanjaney Jalan <cybercoder.nishant@gmail.com>",
   "description": "A single Nuxt3 application to handle multiple subdomains",
   "keywords": [
