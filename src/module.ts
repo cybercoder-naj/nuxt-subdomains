@@ -1,4 +1,10 @@
-import { defineNuxtModule, createResolver, addServerHandler } from "@nuxt/kit";
+import {
+  defineNuxtModule,
+  createResolver,
+  addServerHandler,
+  useRuntimeConfig,
+  updateRuntimeConfig,
+} from "@nuxt/kit";
 
 export interface ModuleOptions {
   mainDomains: string[];
@@ -6,7 +12,7 @@ export interface ModuleOptions {
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: "@cybercoder-naj/nuxt-subdomains",
+    name: "nuxt-subdomains",
     configKey: "nuxtSubdomains",
     version: "0.1.0",
     compatibility: {
@@ -29,7 +35,8 @@ export default defineNuxtModule<ModuleOptions>({
   setup({ mainDomains }, _nuxt) {
     const resolver = createResolver(import.meta.url);
 
-    // TODO send _options to the handler
+    updateRuntimeConfig({ mainDomains });
+
     addServerHandler({
       middleware: true,
       handler: resolver.resolve("./runtime/server/subdomain-handler"),

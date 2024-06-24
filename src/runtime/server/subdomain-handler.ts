@@ -1,12 +1,11 @@
-import { defineEventHandler, getHeaders } from "#imports";
+import { defineEventHandler, getHeaders, useRuntimeConfig } from "#imports";
 
 export default defineEventHandler((event) => {
   const headers = getHeaders(event);
   const hostname = headers["host"];
 
   if (hostname !== undefined) {
-    // TODO get mainDomains from module options
-    const mainDomain = ["localhost:3000"];
+    const { mainDomain } = useRuntimeConfig();
 
     if (!mainDomain.includes(hostname)) {
       const subdomain = hostname.match(/^.*?(?=\.)/)!![0];
