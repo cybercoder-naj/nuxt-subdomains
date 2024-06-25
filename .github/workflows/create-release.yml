@@ -12,7 +12,8 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Create a release
+        uses: actions/checkout@v4
 
       - name: Create a release
         uses: ncipollo/release-action@v1
