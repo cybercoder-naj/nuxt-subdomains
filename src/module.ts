@@ -27,7 +27,7 @@ export default defineNuxtModule<ModuleOptions>({
       const resolver = createResolver(import.meta.url);
 
       files.push({
-        path: resolver.resolve("./app/router.options"),
+        path: resolver.resolve("./runtime/app/router.options"),
         optional: true,
       });
     },
