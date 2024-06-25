@@ -1,6 +1,6 @@
 import { useNuxtApp } from "#imports";
 import type { RouterConfig } from "@nuxt/schema";
-import useSubdomain from "../runtime/composables/useSubdomain";
+import useSubdomain from "../composables/useSubdomain";
 
 export default <RouterConfig>{
   routes: (_routes) => {

@@ -2,7 +2,6 @@ import {
   defineNuxtModule,
   createResolver,
   addServerHandler,
-  useRuntimeConfig,
   updateRuntimeConfig,
 } from "@nuxt/kit";
 
