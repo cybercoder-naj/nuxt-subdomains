@@ -44,7 +44,7 @@ jobs:
         run: bun install --frozen-lockfile
 
       - name: Build
-        run: bun run prepack
+        run: bun run prerelease
 
       - name: Publish to NPM
         uses: JS-DevTools/npm-publish@v3
